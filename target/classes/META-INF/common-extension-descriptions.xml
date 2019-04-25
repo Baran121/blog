@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension-documentation>
+    <configs>
+        <config name="config">
+            <description><![CDATA[Default configuration]]></description>
+            <parameters>
+                <parameter name="configId">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="expirationPolicy">
+                    <description><![CDATA[Configures the minimum amount of time that a dynamic configuration instance can remain idle before the runtime considers it eligible for expiration. This does not mean that the platform will expire the instance at the exact moment that it becomes eligible. The runtime will actually purge the instances when it sees it fit.]]></description>
+                </parameter>
+            </parameters>
+        </config>
+    </configs>
+    <connections>
+        <connection name="connection">
+            <description><![CDATA[]]></description>
+            <parameters>
+                <parameter name="requiredParameter">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="optionalParameter">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="reconnection">
+                    <description><![CDATA[When the application is deployed, a connectivity test is performed on all connectors. If set to true, deployment will fail if the test doesn't pass after exhausting the associated reconnection strategy]]></description>
+                </parameter>
+                <parameter name="poolingProfile">
+                    <description><![CDATA[Characteristics of the connection pool]]></description>
+                </parameter>
+            </parameters>
+        </connection>
+    </connections>
+    <extension name="Common">
+        <description><![CDATA[This is the main class of an extension, is the entry point from which configurations, connection providers, operations and sources are going to be declared.]]></description>
+        <parameters/>
+    </extension>
+    <operations>
+        <operation name="logit">
+            <description><![CDATA[]]></description>
+            <parameters>
+                <parameter name="tracePoints">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="timestamp">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="requestid">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="appName">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="appVersion">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="env">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="payload">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="level">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="logcategory">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="extended">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="statusCode">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="exceptionType">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="expDetail">
+                    <description><![CDATA[]]></description>
+                </parameter>
+            </parameters>
+        </operation>
+    </operations>
+    <sources/>
+    <types/>
+</extension-documentation>
